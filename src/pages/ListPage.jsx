@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router";
 import { getSubjectList } from "../api/subjects";
-import logo from "../assets/images/logo.png";
+import logo from "../assets/images/bg-logo.svg";
 import Arrow from "../assets/icons/arrow.svg?react";
 import Button from "../components/Button";
 import UserList from "../components/user/UserList";
@@ -72,12 +72,19 @@ function ListPage() {
   }, [handleResize]);
 
   return (
-    <div className="bg-grayscale-20 min-h-screen">
-      <div className="tablet:flex-row tablet:justify-between flex flex-col items-center justify-center gap-24 px-50 pt-40 pb-60">
+    <div className="bg-peach-20 min-h-screen">
+      <div className="tablet:flex-row tablet:justify-between tablet:bg-[length:100%_465px] flex flex-col items-center justify-center gap-24 bg-[url(/src/assets/images/bg-Fly.svg)] bg-[length:100%_250px] bg-center bg-no-repeat px-50 pt-40 pb-60">
         <Link to="/">
-          <img className="h-57 w-146" src={logo}></img>
+          <img
+            className="tablet:w-146 tablet:h-29 h-49 w-244 duration-500 ease-in-out"
+            src={logo}
+          ></img>
         </Link>
-        <Button type="empty" onClick={handleButtonClick}>
+        <Button
+          type="empty"
+          onClick={handleButtonClick}
+          className="duration-400 ease-in-out"
+        >
           답변하러 가기
           <Arrow className="text-brown-40 size-18" />
         </Button>

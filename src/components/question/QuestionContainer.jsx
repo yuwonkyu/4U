@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import LogoImg from "../../assets/images/logo.png";
+import LogoImg from "../../assets/images/bg-logo.svg";
 import UrlShareButton from "../shareButton/UrlShareButton";
 import FacebookShareButton from "../shareButton/FacebookShareButton";
 import KakaoShareButton from "../shareButton/KakaoShareButton";
@@ -7,13 +7,13 @@ import SkeletonSubject from "../skeletonUi/SkeletonSubject";
 
 const QuestionContainer = ({ children, subject }) => {
   return (
-    <div className="bg-grayscale-20 relative min-h-screen pb-126">
-      <div className="tablet:bg-size-[1200px_234px] tablet:h-234 absolute h-177 w-full bg-white bg-[url(/src/assets/images/openmind-bg.png)] bg-size-[906px_177px] bg-center bg-no-repeat" />
+    <div className="bg-peach-30 relative min-h-screen pb-126 duration-300 ease-in-out">
+      <div className="tablet:bg-size-[100%_465px] tablet:h-234 bg-peach-20 absolute h-177 w-full bg-[url(/src/assets/images/bg-Fly.svg)] bg-size-[100%_258px] bg-center bg-no-repeat opacity-70 duration-200 ease-in-out" />
       <div className="relative px-24">
         <header className="flex flex-col items-center gap-12">
           <Link to="/list">
             <img
-              className="tablet:h-67 tablet:w-170 mt-40 h-49 w-124"
+              className="tablet:h-67 tablet:w-334 mt-40 h-49 w-244"
               src={LogoImg}
               alt="로고 이미지"
             />
